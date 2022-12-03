@@ -19,7 +19,7 @@ Table: `users`
 | `uuid` | string | UUID to allow easy migration between envs without breaking FK in the logic |
 | `username` | string |  |
 | `role` | string | If the user is a seller or buyer. |
-| `password` | string | hjdkjsd |
+| `password` | string | |
 | `created_at` | timestamp |  |
 | `updated_at` | timestamp |  |
 
