@@ -43,7 +43,9 @@ npm run start:dev
 | --- | --- | --- |
 | `id` | autoincrement |  |
 | `uuid` | string | 
-| `username` | string |  |
+| `firstName` | string |  |
+| `lastName` | string |  |
+| `userName` | string |  |
 | `role` | string | 
 | `password` | string | |
 | `created_at` | timestamp |  |
@@ -58,7 +60,7 @@ npm run start:dev
 | `uuid` | string | 
 | `title` | string | Title of the product  |
 | `cost` | int | Price of the product |
-| `sellerId` | string | ID of the seller who created the product |
+| `sellerId` | ref- users| ID of the seller who created the product |
 | `created_at` | timestamp |  |
 | `updated_at` | timestamp |  |
 | `deleted_at` | timestamp |  |
@@ -70,7 +72,8 @@ npm run start:dev
 | --- | --- | --- |
 | `id` | autoincrement |  |
 | `uuid` | string | 
-| `buyerId` | string | ID of the buyer  |
+| `buyerId` | ref- users | ID of the buyer  |
+| `productId` | ref- products | ID of the product  |
 | `amount` | int | How much the product was bought for |
 | `created_at` | timestamp |  |
 | `updated_at` | timestamp |  |
